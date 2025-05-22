@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import './styles/global.css';
+@import './styles/logo.css';
+@import './styles/footer.css';
+@import './styles/header.css';

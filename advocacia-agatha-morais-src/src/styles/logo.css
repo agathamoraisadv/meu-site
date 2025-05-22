@@ -1,0 +1,32 @@
+.logo {
+  height: 200px; /* Aumentado significativamente */
+  width: auto;
+  max-width: none;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 800px; /* Aumentado significativamente */
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 150px; /* Tamanho responsivo para telas menores, mas ainda grande */
+  }
+  
+  .footer-logo {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 120px; /* Tamanho responsivo para telas muito pequenas, mas ainda grande */
+  }
+  
+  .footer-logo {
+    max-width: 400px;
+  }
+}

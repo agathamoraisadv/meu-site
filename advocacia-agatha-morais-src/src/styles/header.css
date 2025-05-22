@@ -1,0 +1,187 @@
+.header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2rem 0 2rem 0;
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.logo {
+  width: 70%;
+  height: auto;
+  max-width: none;
+}
+
+.nav-container {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0.5rem 2rem;
+}
+
+.nav-link {
+  color: var(--color-white);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: var(--color-secondary);
+}
+
+/* Estilos do botão de contato removidos pois agora está integrado ao menu principal */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 40%;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para a página de contato */
+.contato-page {
+  padding: 2rem 1rem;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--color-primary);
+}
+
+.contact-icon {
+  margin-right: 1rem;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.map-container {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 80%;
+  }
+  
+  .header {
+    min-height: 70vh;
+  }
+  
+  .nav-item {
+    margin: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 90%;
+  }
+  
+  .header {
+    min-height: 60vh;
+  }
+  
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin: 0.5rem 0.7rem;
+  }
+}
